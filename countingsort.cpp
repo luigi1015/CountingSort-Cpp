@@ -1,6 +1,9 @@
+#ifndef Countingsort_CPP
+#define Countingsort_CPP
+
 #include <vector>
 
-namespace countingsort
+namespace Countingsort
 {
 	template <class T> void countingsort( std::vector<T> input, std::vector<T> &output, T highest )
 	{//Counting sort. It assumes the input is a set of unsigned integer-like variables. It takes an input vector, an output vector and the highest integer in the set.
@@ -24,3 +27,5 @@ namespace countingsort
 		}
 	}
 }
+
+#endif /* Countingsort_CPP */

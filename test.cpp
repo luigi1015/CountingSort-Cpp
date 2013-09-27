@@ -26,7 +26,7 @@ int main( int argc, const char* argv[] )
 	printVector<unsigned int>(A);
 	std::cout << std::endl;
 	
-	countingsort::countingsort<unsigned int>(A, B, 6);
+	Countingsort::countingsort<unsigned int>(A, B, 6);
 	
 	std::cout << "After sort:" << std::endl;
 	printVector<unsigned int>(B);
