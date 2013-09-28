@@ -1,10 +1,11 @@
-all: Test countingsort.o
+all: Test Countingsort.o
 
-countingsort.o: countingsort.cpp
-	g++ -Wall -c countingsort.cpp
+Countingsort.o: Countingsort.cpp
+	g++ -Wall -c Countingsort.cpp
 
-Test: countingsort.cpp test.cpp
-	g++ -Wall -std=c++11 -o Test test.cpp
+Test: Countingsort.cpp CountingsortTest.cpp
+#	g++ -Wall -std=c++11 -o Test CountingsortTest.cpp -lcppunit
+	g++ -Wall -o Test CountingsortTest.cpp -lcppunit
 
 clean:
 	rm Test *.o *~

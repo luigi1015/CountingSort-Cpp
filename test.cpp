@@ -1,5 +1,5 @@
 #include <vector>
-#include "countingsort.cpp"
+#include "Countingsort.cpp"
 #include <iostream>
 
 template <class T> void printVector( std::vector<T> items )
@@ -12,7 +12,7 @@ template <class T> void printVector( std::vector<T> items )
 }
 
 int main( int argc, const char* argv[] )
-{//Test out the Insertion Sort.
+{//Test out the Counting Sort.
 	std::vector<unsigned int> A;
 	std::vector<unsigned int> B;
 	A.push_back(5);
